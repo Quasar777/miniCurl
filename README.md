@@ -10,3 +10,13 @@
 ### Project structure
 
 
+### Using
+make requests with flags:
+1) -X - request method
+2) -d - body of request
+3) -H - header of request(may be several)
+4) -o - file for saving name to
+
+#### Example of request:
+minicurl -X POST -d '{"name":"Sarmat"}' -H "Content-Type: application/json" https://primerapi.com/api
+
